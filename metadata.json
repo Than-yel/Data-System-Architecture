@@ -1,0 +1,5 @@
+{
+  "name": "DataFlow Viz",
+  "description": "An interactive visualization of modern data system architectures demonstrating Read, Write, and Asynchronous task flows in real-time.",
+  "requestFramePermissions": []
+}

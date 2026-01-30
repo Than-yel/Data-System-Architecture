@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataFlow Viz - System Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Animations for glowing effects */
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.5); }
+        50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+      }
+      .node-card {
+        transition: all 0.3s ease;
+      }
+      .packet {
+        transition: top 0.6s linear, left 0.6s linear, opacity 0.2s;
+        will-change: top, left;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-slate-100 antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
